@@ -129,3 +129,573 @@ padding:70px 20px;
 text-align:center;
 margin-bottom:40px;
 }
+
+.section-title h2{
+font-size:31px;
+color:#d4af37;
+margin-bottom:8px;
+}
+
+.section-title p{
+color:#999;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.category{
+background:#141414;
+border:1px solid #292929;
+padding:35px 20px;
+border-radius:12px;
+text-align:center;
+transition:.2s;
+}
+
+.category:hover{
+border-color:#d4af37;
+transform:translateY(-4px);
+}
+
+.category-icon{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.category h3{
+margin-bottom:6px;
+}
+
+.category p{
+color:#999;
+font-size:14px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.product{
+background:#141414;
+border:1px solid #292929;
+border-radius:12px;
+overflow:hidden;
+}
+
+.product-image{
+height:210px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#202020;
+color:#d4af37;
+font-size:19px;
+}
+
+.product-info{
+padding:22px;
+}
+
+.product h3{
+margin-bottom:8px;
+}
+
+.product p{
+font-size:14px;
+color:#999;
+min-height:50px;
+}
+
+.price{
+color:#d4af37;
+font-size:21px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.product .btn{
+width:100%;
+text-align:center;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.feature{
+background:#111;
+border:1px solid #252525;
+border-radius:12px;
+padding:30px 20px;
+text-align:center;
+}
+
+.feature h3{
+color:#d4af37;
+margin:10px 0;
+}
+
+.feature p{
+color:#999;
+font-size:14px;
+}
+
+.about{
+background:#111;
+border-top:1px solid #222;
+border-bottom:1px solid #222;
+}
+
+.about-box{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+
+.about-box h2{
+color:#d4af37;
+font-size:30px;
+margin-bottom:20px;
+}
+
+.about-box p{
+color:#bbb;
+font-size:16px;
+}
+
+.contact{
+text-align:center;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+padding:13px 30px;
+border:1px solid #d4af37;
+border-radius:7px;
+color:#d4af37;
+}
+
+footer{
+background:#050505;
+border-top:1px solid #222;
+text-align:center;
+padding:35px 20px;
+color:#777;
+}
+
+.footer-logo{
+color:#d4af37;
+font-size:24px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+@media(max-width:768px){
+
+.menu{
+display:none;
+}
+
+.hero{
+min-height:560px;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.categories,
+.products,
+.features{
+grid-template-columns:1fr;
+}
+
+.section{
+padding:55px 18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+HABIB
+</div>
+
+<nav class="menu">
+
+<a href="#home">خانه</a>
+<a href="#categories">دسته‌بندی</a>
+<a href="#products">محصولات</a>
+<a href="#about">درباره ما</a>
+<a href="#contact">ارتباط</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+HABIB FITNESS LIFESTYLE
+</div>
+
+<h1>
+بدن قوی‌تر،
+<br>
+<span class="gold">نسخه بهتر تو</span>
+</h1>
+
+<p>
+مکمل‌های ورزشی و محصولات فیتنس برای افرادی که
+تمرین را جدی می‌گیرند.
+</p>
+
+<a href="#products" class="btn">
+مشاهده محصولات
+</a>
+
+</div>
+
+</section>
+
+
+<section class="section" id="categories">
+
+<div class="section-title">
+
+<h2>
+دسته‌بندی محصولات
+</h2>
+
+<p>
+هر چیزی که برای مسیر تمرینی‌ات نیاز داری
+</p>
+
+</div>
+
+
+<div class="categories">
+
+<div class="category">
+
+<div class="category-icon">
+💪
+</div>
+
+<h3>
+پروتئین
+</h3>
+
+<p>
+وی، کازئین و مکمل‌های پروتئینی
+</p>
+
+</div>
+
+
+<div class="category">
+
+<div class="category-icon">
+⚡
+</div>
+
+<h3>
+افزایش عملکرد
+</h3>
+
+<p>
+کراتین، پری‌ورک‌اوت و مکمل‌های عملکردی
+</p>
+
+</div>
+
+
+<div class="category">
+
+<div class="category-icon">
+🏋️
+</div>
+
+<h3>
+گینر و افزایش وزن
+</h3>
+
+<p>
+محصولات مناسب افزایش کالری و حجم
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="products">
+
+<div class="section-title">
+
+<h2>
+محصولات منتخب
+</h2>
+
+<p>
+محصولات پیشنهادی HABIB
+</p>
+
+</div>
+
+
+<div class="products">
+
+
+<div class="product">
+
+<div class="product-image">
+تصویر محصول
+</div>
+
+<div class="product-info">
+
+<h3>
+کراتین مونوهیدرات
+</h3>
+
+<p>
+برای افزایش قدرت و بهبود عملکرد تمرینی
+</p>
+
+<div class="price">
+قیمت محصول
+</div>
+
+<a href="#" class="btn">
+مشاهده محصول
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+تصویر محصول
+</div>
+
+<div class="product-info">
+
+<h3>
+پروتئین وی
+</h3>
+
+<p>
+پروتئین باکیفیت برای حمایت از رشد عضلات
+</p>
+
+<div class="price">
+قیمت محصول
+</div>
+
+<a href="#" class="btn">
+مشاهده محصول
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+تصویر محصول
+</div>
+
+<div class="product-info">
+
+<h3>
+گینر
+</h3>
+
+<p>
+مناسب برای افزایش کالری و کمک به افزایش وزن
+</p>
+
+<div class="price">
+قیمت محصول
+</div>
+
+<a href="#" class="btn">
+مشاهده محصول
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="section-title">
+
+<h2>
+چرا HABIB؟
+</h2>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="category-icon">
+✓
+</div>
+
+<h3>
+انتخاب هوشمند
+</h3>
+
+<p>
+محصولات با تمرکز بر نیاز واقعی ورزشکاران
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="category-icon">
+★
+</div>
+
+<h3>
+کیفیت مهم است
+</h3>
+
+<p>
+تمرکز روی محصولات معتبر و قابل اعتماد
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="category-icon">
++
+</div>
+
+<h3>
+همراه مسیر تو
+</h3>
+
+<p>
+فقط فروش محصول نیست، هدف ساختن سبک زندگی بهتر است
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="about" id="about">
+
+<div class="section">
+
+<div class="about-box">
+
+<h2>
+HABIB Fitness Lifestyle
+</h2>
+
+<p>
+اینجا فقط یک فروشگاه مکمل نیست.
+HABIB برای کسانی ساخته شده که تمرین،
+تغذیه و پیشرفت را بخشی از سبک زندگی خود می‌دانند.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section contact" id="contact">
+
+<div class="section-title">
+
+<h2>
+ارتباط با ما
+</h2>
+
+<p>
+برای مشاوره و سفارش با ما در ارتباط باشید
+</p>
+
+<a href="#" class="whatsapp">
+ارتباط در واتساپ
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-logo">
+HABIB
+</div>
+
+<div>
+Fitness Lifestyle
+</div>
+
+<p>
+© 2026 HABIB Fitness Lifestyle
+</p>
+
+</footer>
+
+
+</body>
+</html>
