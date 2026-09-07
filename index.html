@@ -1,81 +1,81 @@
 .category-grid{
-      display:grid;
-        grid-template-columns:repeat(2,1fr);
-          gap:14px;
-            margin-top:25px;
-            }
+    display:grid;
+      grid-template-columns:repeat(2,1fr);
+        gap:14px;
+          margin-top:25px;
+          }
 
-            .category{
-              position:relative;
-                min-height:190px;
-                  padding:22px;
-                    border:1px solid #2d2d2d;
-                      border-radius:12px;
+          .category{
+            position:relative;
+              min-height:180px;
+                padding:20px;
+                  border:1px solid #292929;
+                    border-radius:12px;
+                      background:#111;
                         overflow:hidden;
-                          background:linear-gradient(145deg,#171717,#090909);
-                            transition:.3s;
-                            }
+                          transition:.3s;
+                          }
 
-                            .category::before{
-                              content:"";
-                                position:absolute;
-                                  width:130px;
-                                    height:130px;
-                                      left:-35px;
-                                        top:-35px;
-                                          border-radius:50%;
-                                            background:rgba(212,175,55,.12);
-                                            }
+                          .category:before{
+                            content:"";
+                              position:absolute;
+                                width:120px;
+                                  height:120px;
+                                    left:-40px;
+                                      top:-40px;
+                                        border-radius:50%;
+                                          background:rgba(212,175,55,.10);
+                                          }
 
-                                            .category:hover{
-                                              border-color:#d4af37;
-                                                transform:translateY(-4px);
-                                                }
+                                          .category:hover{
+                                            border-color:#d4af37;
+                                              transform:translateY(-3px);
+                                              }
 
-                                                .category-number{
-                                                  color:#666;
-                                                    font-size:11px;
-                                                    }
+                                              .category-number{
+                                                color:#666;
+                                                  font-size:10px;
+                                                  }
 
-                                                    .category-icon{
-                                                      width:58px;
-                                                        height:58px;
-                                                          margin:15px 0;
-                                                            border:1px solid #d4af37;
-                                                              border-radius:50%;
-                                                                display:flex;
-                                                                  align-items:center;
-                                                                    justify-content:center;
-                                                                      color:#d4af37;
-                                                                        font-size:22px;
-                                                                          font-weight:bold;
-                                                                          }
+                                                  .category-icon{
+                                                    width:52px;
+                                                      height:52px;
+                                                        margin:12px 0;
+                                                          border:1px solid #d4af37;
+                                                            border-radius:50%;
+                                                              display:flex;
+                                                                align-items:center;
+                                                                  justify-content:center;
+                                                                    color:#d4af37;
+                                                                      font-size:20px;
+                                                                        font-weight:bold;
+                                                                        }
 
-                                                                          .category h3{
-                                                                            font-size:16px;
-                                                                              margin-bottom:3px;
-                                                                              }
+                                                                        .category h3{
+                                                                          font-size:15px;
+                                                                            margin:0 0 3px;
+                                                                            }
 
-                                                                              .category p{
-                                                                                color:#888;
-                                                                                  font-size:11px;
-                                                                                  }
+                                                                            .category p{
+                                                                              color:#888;
+                                                                                font-size:10px;
+                                                                                }
 
-                                                                                  .category-arrow{
-                                                                                    position:absolute;
-                                                                                      left:18px;
-                                                                                        bottom:18px;
-                                                                                          color:#d4af37;
-                                                                                          }
+                                                                                .category-arrow{
+                                                                                  position:absolute;
+                                                                                    left:16px;
+                                                                                      bottom:16px;
+                                                                                        color:#d4af37;
+                                                                                        }
 
-                                                                                          @media(max-width:600px){
-                                                                                            .category{
-                                                                                                min-height:175px;
-                                                                                                    padding:18px;
-                                                                                                      }
+                                                                                        @media(max-width:600px){
+                                                                                          .category{
+                                                                                              min-height:165px;
+                                                                                                  padding:17px;
+                                                                                                    }
 
-                                                                                                        .category h3{
-                                                                                                            font-size:14px;
-                                                                                                              }
-                                                                                                              }
+                                                                                                      .category h3{
+                                                                                                          font-size:14px;
+                                                                                                            }
+                                                                                                            }
 }
