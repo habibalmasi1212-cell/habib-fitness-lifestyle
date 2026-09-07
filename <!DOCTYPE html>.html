@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>HABIB Fitness Lifestyle | مکمل ورزشی</title>
+
+        <style>
+            * {
+                      margin: 0;
+                            padding: 0;
+                                  box-sizing: border-box;
+            }
+
+                body {
+                          background: #0a0a0a;
+                                color: #ffffff;
+                                      font-family: Arial, sans-serif;
+                }
+
+                    /* HEADER */
+
+                        header {
+                                  position: sticky;
+                                        top: 0;
+                                              z-index: 1000;
+                                                    background: rgba(10,10,10,0.95);
+                                                          border-bottom: 1px solid #252525;
+                                                                backdrop-filter: blur(10px);
+                        }
+
+                            .header {
+                                      max-width: 1200px;
+                                            margin: auto;
+                                                  padding: 18px 25px;
+                                                        display: flex;
+                                                              align-items: center;
+                                                                    justify-content: space-between;
+                            }
+
+                                .logo {
+                                          font-size: 24px;
+                                                font-weight: 900;
+                                                      letter-spacing: 2px;
+                                                            color: #d4af37;
+                                }
+
+                                    nav {
+                                              display: flex;
+                                                    gap: 28px;
+                                    }
+
+                                        nav a {
+                                                  color: #ffffff;
+                                                        text-decoration: none;
+                                                              font-size: 14px;
+                                                                    transition: 0.3s;
+                                        }
+
+                                            nav a:hover {
+                                                      color: #d4af37;
+                                            }
+
+                                                .header-actions {
+                                                          display: flex;
+                                                                gap: 12px;
+                                                }
+
+                                                    .icon-btn {
+                                                              width: 42px;
+                                                                    height: 42px;
+                                                                          border: 1px solid #333;
+                                                                                background: #111;
+                                                                                      color: #fff;
+                                                                                            border-radius: 50%;
+                                                                                                  display: flex;
+                                                                                                        align-items: center;
+                                                                                                              justify-content: center;
+                                                                                                                    font-size: 18px;
+                                                    }
+
+                                                        /* HERO */
+
+                                                            .hero {
+                                                                      min-height: 650px;
+                                                                            display: flex;
+                                                                                  align-items: center;
+                                                                                        position: relative;
+                                                                                              overflow: hidden;
+                                                                                                    background:
+                                                                                                            radial-gradient(circle at 75% 40%, rgba(212,175,55,0.18), transparent 30%),
+                                                                                                                    linear-gradient(135deg, #111111 0%, #050505 70%);
+                                                            }
+
+                                                                .hero::before {
+                                                                          content: "";
+                                                                                position: absolute;
+                                                                                      width: 500px;
+                                                                                            height: 500px;
+                                                                                                  border-radius: 50%;
+                                                                                                        border: 1px solid rgba(212,175,55,0.15);
+                                                                                                              right: -150px;
+                                                                                                                    top: 80px;
+                                                                }
+
+                                                                    .hero-content {
+                                                                              max-width: 1200px;
+                                                                                    width: 100%;
+                                                                                          margin: auto;
+                                                                                                padding: 80px 25px;
+                                                                                                      position: relative;
+                                                                                                            z-index: 2;
+                                                                    }
+
+                                                                        .eyebrow {
+                                                                                  color: #d4af37;
+                                                                                        font-size: 13px;
+                                                                                              letter-spacing: 3px;
+                                                                                                    margin-bottom: 20px;
+                                                                                                          font-weight: bold;
+                                                                        }
+
+                                                                            .hero h1 {
+                                                                                      font-size: clamp(42px, 7vw, 82px);
+                                                                                            line-height: 1.05;
+                                                                                                  max-width: 700px;
+                                                                                                        margin-bottom: 25px;
+                                                                                                              font-weight: 900;
+                                                                            }
+
+                                                                                .hero h1 span {
+                                                                                          color: #d4af37;
+                                                                                }
+
+                                                                                    .hero p {
+                                                                                              max-width: 560px;
+                                                                                                    color: #bdbdbd;
+                                                                                                          font-size: 18px;
+                                                                                                                line-height: 2;
+                                                                                                                      margin-bottom: 35px;
+                                                                                    }
+
+                                                                                        .hero-buttons {
+                                                                                                  display: flex;
+                                                                                                        gap: 15px;
+                                                                                                              flex-wrap: wrap;
+                                                                                        }
+
+                                                                                            .btn-primary {
+                                                                                                      display: inline-block;
+                                                                                                            background: #d4af37;
+                                                                                                                  color: #080808;
+                                                                                                                        text-decoration: none;
+                                                                                                                              padding: 16px 32px;
+                                                                                                                                    border-radius: 4px;
+                                                                                                                                          font-weight: 900;
+                                                                                                                                                transition: 0.3s;
+                                                                                            }
+
+                                                                                                .btn-primary:hover {
+                                                                                                          transform: translateY(-3px);
+                                                                                                }
+
+                                                                                                    .btn-secondary {
+                                                                                                              display: inline-block;
+                                                                                                                    border: 1px solid #555;
+                                                                                                                          color: #fff;
+                                                                                                                                text-decoration: none;
+                                                                                                                                      padding: 16px 32px;
+                                                                                                                                            border-radius: 4px;
+                                                                                                                                                  transition: 0.3s;
+                                                                                                    }
+
+                                                                                                        .btn-secondary:hover {
+                                                                                                                  border-color: #d4af37;
+                                                                                                                        color: #d4af37;
+                                                                                                        }
+
+                                                                                                            /* GOLD LINE */
+
+                                                                                                                .gold-line {
+                                                                                                                          width: 70px;
+                                                                                                                                height: 3px;
+                                                                                                                                      background: #d4af37;
+                                                                                                                                            margin-bottom: 25px;
+                                                                                                                }
+
+                                                                                                                    /* MOBILE */
+
+                                                                                                                        @media (max-width: 700px) {
+
+                                                                                                                                  .header {
+                                                                                                                                            padding: 15px 18px;
+                                                                                                                                  }
+
+                                                                                                                                        nav {
+                                                                                                                                                    display: none;
+                                                                                                                                        }
+
+                                                                                                                                              .logo {
+                                                                                                                                                        font-size: 20px;
+                                                                                                                                              }
+
+                                                                                                                                                    .hero {
+                                                                                                                                                                min-height: 620px;
+                                                                                                                                                    }
+
+                                                                                                                                                          .hero-content {
+                                                                                                                                                                    padding: 70px 22px;
+                                                                                                                                                          }
+
+                                                                                                                                                                .hero h1 {
+                                                                                                                                                                            font-size: 48px;
+                                                                                                                                                                }
+
+                                                                                                                                                                      .hero p {
+                                                                                                                                                                                font-size: 16px;
+                                                                                                                                                                      }
+
+                                                                                                                                                                            .hero-buttons {
+                                                                                                                                                                                        flex-direction: column;
+                                                                                                                                                                                                width: 100%;
+                                                                                                                                                                            }
+
+                                                                                                                                                                                  .btn-primary,
+                                                                                                                                                                                        .btn-secondary {
+                                                                                                                                                                                                    text-align: center;
+                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                              .header-actions {
+                                                                                                                                                                                                        gap: 7px;
+                                                                                                                                                                                              }
+
+                                                                                                                                                                                                    .icon-btn {
+                                                                                                                                                                                                                width: 38px;
+                                                                                                                                                                                                                        height: 38px;
+                                                                                                                                                                                                    }
+                                                                                                                        }
+                                                                                                                          </style>
+                                                                                                                          </head>
+
+                                                                                                                          <body>
+
+                                                                                                                          <header>
+                                                                                                                            <div class="header">
+
+                                                                                                                                <div class="logo">
+                                                                                                                                      HABIB
+                                                                                                                                          </div>
+
+                                                                                                                                              <nav>
+                                                                                                                                                    <a href="#">خانه</a>
+                                                                                                                                                          <a href="#">فروشگاه</a>
+                                                                                                                                                                <a href="#">دسته‌بندی‌ها</a>
+                                                                                                                                                                      <a href="#">درباره ما</a>
+                                                                                                                                                                            <a href="#">ارتباط</a>
+                                                                                                                                                                                </nav>
+
+                                                                                                                                                                                    <div class="header-actions">
+                                                                                                                                                                                          <div class="icon-btn">⌕</div>
+                                                                                                                                                                                                <div class="icon-btn">🛒</div>
+                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                      </header>
+
+
+                                                                                                                                                                                                      <section class="hero">
+
+                                                                                                                                                                                                        <div class="hero-content">
+
+                                                                                                                                                                                                            <div class="eyebrow">
+                                                                                                                                                                                                                  HABIB FITNESS LIFESTYLE
+                                                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                                                          <div class="gold-line"></div>
+
+                                                                                                                                                                                                                              <h1>
+                                                                                                                                                                                                                                    بدن قوی‌تر،<br>
+                                                                                                                                                                                                                                          <span>نسخه بهتر تو.</span>
+                                                                                                                                                                                                                                              </h1>
+
+                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                        انتخاب هوشمند مکمل‌های ورزشی برای کسانی که
+                                                                                                                                                                                                                                                              تمرین را جدی می‌گیرند و برای نتیجه بهتر ساخته شده‌اند.
+                                                                                                                                                                                                                                                                  </p>
+
+                                                                                                                                                                                                                                                                      <div class="hero-buttons">
+                                                                                                                                                                                                                                                                            <a href="#" class="btn-primary">
+                                                                                                                                                                                                                                                                                    مشاهده محصولات
+                                                                                                                                                                                                                                                                                          </a>
+
+                                                                                                                                                                                                                                                                                                <a href="#" class="btn-secondary">
+                                                                                                                                                                                                                                                                                                        دسته‌بندی مکمل‌ها
+                                                                                                                                                                                                                                                                                                              </a>
+                                                                                                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                                                                                                                                    </section>
+
+                                                                                                                                                                                                                                                                                                                    </body>
+                                                                                                                                                                                                                                                                                                                    </html>
+                                                                                                                                                                                                    }
+                                                                                                                                                                                              }
+                                                                                                                                                                                        }
+                                                                                                                                                                            }
+                                                                                                                                                                      }
+                                                                                                                                                                }
+                                                                                                                                                          }
+                                                                                                                                                    }
+                                                                                                                                              }
+                                                                                                                                        }
+                                                                                                                                  }
+                                                                                                                        }
+                                                                                                                }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
